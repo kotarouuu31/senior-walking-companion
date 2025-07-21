@@ -20,11 +20,18 @@ export default {
         'success-green': '#4CAF50',
       },
       fontSize: {
-        'step-display': '3rem', // 48px以上の大きなフォント
-        'senior-lg': '1.5rem',   // シニア向け大きめテキスト
+        'step-display': '4rem',     // 64px - より大きな歩数表示
+        'senior-xl': '2rem',        // 32px - 大きなヘッダー
+        'senior-lg': '1.5rem',      // 24px - 大きめテキスト
+        'senior-base': '1.125rem',  // 18px - 基本テキスト（16px以上）
+        'senior-sm': '1rem',        // 16px - 小さめテキスト（最小16px）
       },
       spacing: {
-        'touch-target': '44px', // 最小タッチターゲットサイズ
+        'touch-target': '48px',     // 48px - より大きなタッチターゲット
+        'touch-target-lg': '56px',  // 56px - 特に重要なボタン用
+      },
+      lineHeight: {
+        'senior': '1.6',            // 読みやすい行間
       }
     },
   },
