@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* シニア向けカスタムスタイル */
+@layer base {
+  body {
+    font-family: 'Hiragino Sans', 'ヒラギノ角ゴシック', 'Yu Gothic', 'YuGothic', sans-serif;
+    background: linear-gradient(135deg, #E1BEE7 0%, #9C27B0 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .gradient-warm {
+    background: linear-gradient(135deg, #FF8A65 0%, #FFD54F 100%);
+  }
+  
+  .gradient-accent {
+    background: linear-gradient(135deg, #42A5F5 0%, #66BB6A 100%);
+  }
+  
+  .btn-senior {
+    @apply px-6 py-4 rounded-xl text-white font-bold text-senior-lg shadow-lg transform transition-all duration-200 hover:scale-105 active:scale-95;
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .card-senior {
+    @apply bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-xl;
+  }
+}
