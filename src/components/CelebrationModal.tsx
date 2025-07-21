@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Milestone } from '../types';
+import { useEffect } from 'react';
+import type { Milestone } from '../types';
 
 interface CelebrationModalProps {
   isOpen: boolean;

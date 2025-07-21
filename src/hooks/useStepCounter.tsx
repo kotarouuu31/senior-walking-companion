@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useLocalStorage, dateUtils } from './useLocalStorage';
-import { DailyData, WeeklyStats, Milestone, AppState, STORAGE_KEYS } from '../types';
+import type { DailyData, WeeklyStats, Milestone, AppState } from '../types';
+import { STORAGE_KEYS } from '../types';
 
 // マイルストーンの定義
 const MILESTONES: Omit<Milestone, 'achieved'>[] = [

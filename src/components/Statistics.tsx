@@ -1,5 +1,4 @@
-import React from 'react';
-import { WeeklyStats, DailyData } from '../types';
+import type { WeeklyStats, DailyData } from '../types';
 import { dateUtils } from '../hooks/useLocalStorage';
 
 interface StatisticsProps {

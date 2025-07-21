@@ -1,5 +1,4 @@
-import React from 'react';
-import { Milestone } from '../types';
+import type { Milestone } from '../types';
 
 interface MilestonesProps {
   milestones: Milestone[];
@@ -13,7 +12,7 @@ export function Milestones({ milestones }: MilestonesProps) {
       </h2>
       
       <div className="space-y-3">
-        {milestones.map((milestone, index) => (
+        {milestones.map((milestone) => (
           <div
             key={milestone.steps}
             className={`flex items-center p-3 rounded-xl transition-all duration-300 ${
