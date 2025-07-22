@@ -24,8 +24,8 @@ export function CelebrationModal({ isOpen, milestone, onClose }: CelebrationModa
         modal.focus();
       }
       
-      // 1秒後に自動で閉じる
-      const timer = setTimeout(onClose, 1000);
+      // 2秒後に自動で閉じる
+      const timer = setTimeout(onClose, 2000);
       return () => {
         document.removeEventListener('keydown', handleEscape);
         clearTimeout(timer);
@@ -82,7 +82,7 @@ export function CelebrationModal({ isOpen, milestone, onClose }: CelebrationModa
         </button>
         
         <div className="text-senior-sm text-gray-600 leading-senior">
-          <span aria-hidden="true">⏰</span> 1秒後に自動で閉じます
+          <span aria-hidden="true">⏰</span> 2秒後に自動で閉じます
         </div>
       </div>
     </div>
