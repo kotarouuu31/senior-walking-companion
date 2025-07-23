@@ -4,6 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/senior-walking-companion/',
   server: {
     port: 5173,
     host: true,
@@ -50,8 +51,8 @@ export default defineConfig({
         background_color: '#F3F4F6',
         display: 'standalone',
         orientation: 'portrait',
-        scope: '/',
-        start_url: '/',
+        scope: '/senior-walking-companion/',
+        start_url: '/senior-walking-companion/',
         icons: [
           {
             src: 'pwa-192x192.png',
