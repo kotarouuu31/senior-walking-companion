@@ -6,12 +6,12 @@ import { ActionButtons } from './components/ActionButtons';
 import { Milestones } from './components/Milestones';
 import { Statistics } from './components/Statistics';
 import { CelebrationModal } from './components/CelebrationModal';
+import { InstallPrompt } from './components/InstallPrompt';
 import { useStepCounter } from './hooks/useStepCounter';
 
 function App() {
   const {
     currentSteps,
-    weeklyStats,
     weeklyData,
     milestones,
     showCelebration,
@@ -40,7 +40,6 @@ function App() {
       
       {/* 統計情報 */}
       <Statistics 
-        weeklyStats={weeklyStats}
         weeklyData={weeklyData}
       />
       
@@ -50,6 +49,9 @@ function App() {
         milestone={lastAchievedMilestone}
         onClose={closeCelebration}
       />
+      
+      {/* PWAインストールプロンプト */}
+      <InstallPrompt />
       
       {/* フッター */}
       <div className="text-center text-white/80 text-sm mt-8 pb-4">

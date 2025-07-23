@@ -14,13 +14,40 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}'],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/fonts\.googleapis\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'google-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
+              }
+            }
+          },
+          {
+            urlPattern: /^https:\/\/fonts\.gstatic\.com\/.*/i,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'gstatic-fonts-cache',
+              expiration: {
+                maxEntries: 10,
+                maxAgeSeconds: 60 * 60 * 24 * 365 // 1年
+              }
+            }
+          }
+        ]
+      },
+      includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg', 'pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'シニア ウォーキング コンパニオン',
-        short_name: 'ウォーキング',
-        description: 'シニア向けの歩数記録アプリ。毎日10,000歩を目標に健康的な生活をサポートします。',
-        theme_color: '#9C27B0',
-        background_color: '#E1BEE7',
+        name: '10000歩',
+        short_name: '10000歩',
+        description: '毎日の歩数を楽しく記録するシニア向けアプリ',
+        theme_color: '#8B5CF6',
+        background_color: '#F3F4F6',
         display: 'standalone',
         orientation: 'portrait',
         scope: '/',

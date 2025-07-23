@@ -1,0 +1,46 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)" stroke="#FFFFFF" stroke-width="8"/>
+  
+  <!-- Walking figure icon -->
+  <g transform="translate(180, 120)">
+    <!-- Head -->
+    <circle cx="40" cy="40" r="25" fill="#FFFFFF"/>
+    
+    <!-- Body -->
+    <rect x="25" y="60" width="30" height="60" rx="15" fill="#FFFFFF"/>
+    
+    <!-- Arms -->
+    <rect x="5" y="70" width="20" height="8" rx="4" fill="#FFFFFF" transform="rotate(-20 15 74)"/>
+    <rect x="55" y="70" width="20" height="8" rx="4" fill="#FFFFFF" transform="rotate(20 65 74)"/>
+    
+    <!-- Legs -->
+    <rect x="20" y="115" width="12" height="40" rx="6" fill="#FFFFFF" transform="rotate(-15 26 135)"/>
+    <rect x="48" y="115" width="12" height="40" rx="6" fill="#FFFFFF" transform="rotate(15 54 135)"/>
+    
+    <!-- Feet -->
+    <ellipse cx="20" cy="160" rx="8" ry="4" fill="#FFFFFF" transform="rotate(-15 20 160)"/>
+    <ellipse cx="65" cy="160" rx="8" ry="4" fill="#FFFFFF" transform="rotate(15 65 160)"/>
+  </g>
+  
+  <!-- Steps counter display -->
+  <rect x="80" y="320" width="352" height="120" rx="20" fill="#FFFFFF" opacity="0.95"/>
+  
+  <!-- "10000" text -->
+  <text x="256" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#8B5CF6">10000</text>
+  
+  <!-- "歩" text -->
+  <text x="256" y="420" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#7C3AED">歩</text>
+</svg>
