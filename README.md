@@ -1,60 +1,194 @@
-# 🚶‍♂️ シニア ウォーキング コンパニオン
+# 🚶‍♂️ 10000歩 - シニア向け歩数記録PWAアプリ
 
-高齢者向けの歩数記録Webアプリケーション。毎日10,000歩を目標に、健康的な生活をサポートします。
+**おじいちゃん・おばあちゃんのための、やさしい歩数記録アプリ**
 
-![App Screenshot](https://img.shields.io/badge/Status-Complete-success)
-![React](https://img.shields.io/badge/React-18.x-blue)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.x-06B6D4)
-![PWA](https://img.shields.io/badge/PWA-Ready-green)
+毎日10,000歩を目標に、健康的で楽しい歩行習慣をサポートする完全PWA対応アプリです。
+
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-10000歩アプリ-success?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
+[![PWA Ready](https://img.shields.io/badge/📱_PWA-Ready-green?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
+[![GitHub Pages](https://img.shields.io/badge/🚀_Deployed_on-GitHub_Pages-blue?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
+
+![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite)
+![PWA](https://img.shields.io/badge/PWA-Complete-FF6B6B?logo=pwa)
 
 ## 🎯 プロジェクト概要
 
-このアプリは、シニア世代の方々が毎日の歩数を楽しく記録できるよう設計されたWebアプリケーションです。大きな文字とボタン、直感的な操作性、そして達成感を味わえるマイルストーン機能を備えています。
+「10000歩」は、シニア世代の健康促進を目的とした、完全PWA対応の歩数記録アプリです。
 
-### 🌟 主な特徴
+**🏆 なぜこのアプリが特別なのか？**
+- スマートフォンのホーム画面に追加して、**ネイティブアプリのように使用可能**
+- **オフライン対応**で、インターネットがなくても基本機能が動作
+- シニア向けに最適化された**大きな文字・ボタン**で操作しやすい
+- **アクセシビリティ完全対応**（スクリーンリーダー、キーボードナビゲーション）
 
-- **シニアフレンドリーなUI**: 大きな文字（48px以上）と操作しやすいボタン（最小44px）
-- **美しいグラデーションデザイン**: 暖色系を基調とした親しみやすい色彩
-- **マイルストーン機能**: 段階的な達成感で継続をサポート
-- **週間統計**: 詳細な歩数データと励ましメッセージ
-- **PWA対応**: ホーム画面に追加してアプリのように使用可能
-- **レスポンシブデザイン**: モバイルファーストでスマートフォンに最適化
+## ✨ 主な特徴
+
+### 📱 PWA（Progressive Web App）機能
+- 🏠 **ホーム画面に追加**: スマートフォンのアイコンから直接起動
+- 📶 **オフライン対応**: インターネット接続なしでも基本機能が利用可能
+- ⚡ **高速起動**: Service Workerによる高速化とキャッシュ機能
+- 🔄 **自動更新**: 新しいバージョンが自動で適用
+
+### 👴👵 シニアフレンドリーなデザイン
+- 📏 **大きな文字**: 最大64pxの読みやすいフォントサイズ
+- 🎯 **大きなボタン**: 最小48pxのタッチしやすいボタン
+- 🌈 **高コントラスト**: 見やすい色彩設計
+- 🎨 **温かみのあるデザイン**: 親しみやすいグラデーションカラー
+
+### 🏃‍♂️ 歩数記録機能
+- 📊 **リアルタイム進捗**: 10,000歩への進捗を視覚的に表示
+- 🎉 **マイルストーン達成**: 段階的な達成でモチベーション維持
+- 📈 **週間統計**: 詳細な歩数データと励ましメッセージ
+- 🎊 **お祝い機能**: 目標達成時の楽しいアニメーション
+
+### ♿ アクセシビリティ対応
+- 🗣️ **スクリーンリーダー対応**: ARIA属性による完全対応
+- ⌨️ **キーボードナビゲーション**: マウスなしでも操作可能
+- 🎯 **フォーカス管理**: 明確な操作順序
+- 📢 **セマンティックHTML**: 支援技術との完全互換
 
 ## 🛠️ 技術スタック
 
-### フロントエンド
-- **React 18** - モダンなUIライブラリ
-- **TypeScript** - 型安全な開発
-- **Vite** - 高速な開発環境
-- **Tailwind CSS** - ユーティリティファーストCSS
+### 🎨 フロントエンド
+- **React 19** - 最新のUIライブラリ
+- **TypeScript 5.x** - 型安全な開発環境
+- **Vite 7.x** - 超高速ビルドツール
+- **Tailwind CSS 3.x** - ユーティリティファーストCSS
+
+### 📱 PWA技術
+- **Vite PWA Plugin** - PWA機能の自動生成
+- **Workbox** - Service Workerとキャッシュ戦略
+- **Web App Manifest** - アプリメタデータ
+- **Service Worker** - オフライン対応・高速化
+
+### 🚀 デプロイ・CI/CD
+- **GitHub Actions** - 自動ビルド・デプロイ
+- **GitHub Pages** - 静的サイトホスティング
+- **自動デプロイ** - mainブランチプッシュで自動更新
+
+### ♿ アクセシビリティ
+- **ARIA属性** - スクリーンリーダー対応
+- **セマンティックHTML** - 構造化されたマークアップ
+- **キーボードナビゲーション** - 完全対応
+- **フォーカス管理** - 明確な操作順序
+
+## 📱 使用方法
+
+### 🌐 Webブラウザでアクセス
+1. **URLにアクセス**: [https://kotarouuu31.github.io/senior-walking-companion/](https://kotarouuu31.github.io/senior-walking-companion/)
+2. **ブラウザで直接使用**: そのまま歩数記録を開始
+
+### 📲 PWAアプリとしてインストール
+1. **上記URLにアクセス**
+2. **インストールプロンプトが表示**されたら「追加する」をタップ
+3. **ホーム画面にアイコンが追加**されます
+4. **アイコンをタップ**してネイティブアプリのように起動
+
+### 🚶‍♂️ 基本的な使い方
+1. **歩数を追加**: 「+100歩」「+500歩」「+1000歩」ボタンで記録
+2. **進捗確認**: プログレスバーで10,000歩への進捗を確認
+3. **マイルストーン達成**: 段階的な目標達成でお祝いメッセージ
+4. **統計確認**: 週間データと励ましメッセージを表示
+5. **リセット**: 新しい日は「リセット」ボタンで初期化
+
+## 🎯 対象ユーザー
+
+- 👴👵 **シニア世代の方々**
+- 🚶‍♂️ **日常的な歩行習慣を身につけたい方**
+- 📱 **スマートフォンを使い始めた高齢者**
+- ♿ **アクセシビリティ機能が必要な方**
+- 💪 **健康管理に興味のある方**
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 開発者向け情報
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 📦 インストール
+```bash
+# リポジトリをクローン
+git clone https://github.com/kotarouuu31/senior-walking-companion.git
+cd senior-walking-companion
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
+npm run dev
 ```
+
+### 🛠️ 利用可能なスクリプト
+```bash
+# 開発サーバー起動
+npm run dev
+
+# プロダクションビルド
+npm run build
+
+# ビルド結果をプレビュー
+npm run preview
+
+# ESLintでコード品質チェック
+npm run lint
+
+# GitHubにプッシュ
+npm run push
+
+# PWAアイコン生成
+node scripts/generate-icons.js
+```
+
+### 🏗️ プロジェクト構造
+```
+src/
+├── components/          # Reactコンポーネント
+│   ├── Header.tsx      # ヘッダー（歩数表示）
+│   ├── ProgressBar.tsx # 進捗バー
+│   ├── ActionButtons.tsx # 操作ボタン
+│   ├── Milestones.tsx  # マイルストーン表示
+│   ├── Statistics.tsx  # 統計情報
+│   ├── CelebrationModal.tsx # お祝いモーダル
+│   ├── InstallPrompt.tsx # PWAインストールプロンプト
+│   └── Layout.tsx      # レイアウト
+├── hooks/              # カスタムフック
+│   └── useStepCounter.tsx # 歩数管理ロジック
+├── types/              # TypeScript型定義
+│   └── index.ts        # 共通型定義
+└── styles/             # スタイル設定
+    └── index.css       # Tailwind CSS設定
+
+public/
+├── pwa-192x192.png     # PWAアイコン（192x192）
+├── pwa-512x512.png     # PWAアイコン（512x512）
+├── apple-touch-icon.png # Apple Touch Icon
+├── .nojekyll           # GitHub Pages設定
+└── 404.html            # SPA用404ページ
+
+.github/workflows/
+└── deploy.yml          # GitHub Actions設定
+```
+
+## 🤝 コントリビューション
+
+1. このリポジトリをフォーク
+2. フィーチャーブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add amazing feature'`)
+4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
+5. Pull Requestを作成
+
+## 📄 ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## 🙏 謝辞
+
+- シニア世代の健康促進に貢献できることを願っています
+- アクセシビリティの重要性を認識し、すべての人が使いやすいアプリを目指しました
+- PWA技術により、ネイティブアプリのような体験を提供します
+
+---
+
+**🚶‍♂️ 毎日10,000歩で、健康な毎日を！ 🚶‍♀️**
+
+[![Live Demo](https://img.shields.io/badge/🌐_今すぐ試す-10000歩アプリ-success?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
