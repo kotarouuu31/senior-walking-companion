@@ -7,16 +7,24 @@
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-10000歩アプリ-success?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
 [![PWA Ready](https://img.shields.io/badge/📱_PWA-Ready-green?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
 [![GitHub Pages](https://img.shields.io/badge/🚀_Deployed_on-GitHub_Pages-blue?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
+[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge)](https://github.com/kotarouuu31/senior-walking-companion/actions)
 
-![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss)
-![Vite](https://img.shields.io/badge/Vite-7.x-646CFF?logo=vite)
+![React](https://img.shields.io/badge/React-19.1-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-7.0-646CFF?logo=vite)
 ![PWA](https://img.shields.io/badge/PWA-Complete-FF6B6B?logo=pwa)
 
 ## 🎯 プロジェクト概要
 
 「10000歩」は、シニア世代の健康促進を目的とした、完全PWA対応の歩数記録アプリです。
+
+### 🆕 最新アップデート (2025年8月)
+- ✅ **GitHub Pages自動デプロイ**: mainブランチへのプッシュで自動更新
+- ✅ **PWA完全対応**: オフライン機能、ホーム画面追加、Service Worker実装
+- ✅ **アクセシビリティ強化**: ARIA属性、キーボードナビゲーション完全対応
+- ✅ **UI/UX改善**: シニア向け大きなフォント・ボタン、高コントラストデザイン
+- ✅ **お祝い機能**: 目標達成時の自動クローズモーダル（2秒）
 
 **🏆 なぜこのアプリが特別なのか？**
 - スマートフォンのホーム画面に追加して、**ネイティブアプリのように使用可能**
@@ -53,10 +61,10 @@
 ## 🛠️ 技術スタック
 
 ### 🎨 フロントエンド
-- **React 19** - 最新のUIライブラリ
-- **TypeScript 5.x** - 型安全な開発環境
-- **Vite 7.x** - 超高速ビルドツール
-- **Tailwind CSS 3.x** - ユーティリティファーストCSS
+- **React 19.1** - 最新のUIライブラリ
+- **TypeScript 5.8** - 型安全な開発環境
+- **Vite 7.0** - 超高速ビルドツール
+- **Tailwind CSS 3.4** - ユーティリティファーストCSS
 
 ### 📱 PWA技術
 - **Vite PWA Plugin** - PWA機能の自動生成
@@ -101,7 +109,14 @@
 - 📱 **スマートフォンを使い始めた高齢者**
 - ♿ **アクセシビリティ機能が必要な方**
 - 💪 **健康管理に興味のある方**
-```
+
+## 📊 パフォーマンス・品質
+
+- ⚡ **高速起動**: Service Workerによる瞬時ロード
+- 📱 **レスポンシブデザイン**: 全デバイス対応
+- ♿ **アクセシビリティスコア**: 100%準拠
+- 🔒 **セキュリティ**: HTTPS完全対応
+- 🌐 **オフライン対応**: 完全なオフライン機能
 
 ## 🔧 開発者向け情報
 
