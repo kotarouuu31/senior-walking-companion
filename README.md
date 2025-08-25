@@ -249,7 +249,7 @@ public/
 
 ---
 
-**おじいちゃん、毎日ありがとう！技術で応援しています！**
+
 
 [![Live Demo](https://img.shields.io/badge/今すぐ試す-10000歩アプリ-success?style=for-the-badge)](https://kotarouuu31.github.io/senior-walking-companion/)
 [![GitHub](https://img.shields.io/badge/GitHub-プロジェクト詳細-orange?style=for-the-badge)](https://github.com/kotarouuu31/senior-walking-companion)
